@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mubin Portfolio</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Margarine&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap");
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+      #navbar {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        background-color: rgb(255, 242, 231);
+        justify-content: space-between;
+      }
+
+      #nav-logo {
+        padding-left: 90px;
+      }
+      #nav-logo p {
+        font-family: "Ga Maamli", sans-serif;
+        font-size: 45px;
+        font-weight: 800;
+        line-height: 61px;
+        letter-spacing: 0%;
+      }
+      #nav-logo p span {
+        color: rgb(0, 136, 255);
+      }
+
+      #nav-list {
+        padding-right: 80px;
+        padding-top: 13px;
+      }
+      #nav-list ul {
+        text-decoration: none;
+        display: flex;
+        gap: 30px;
+        font-family: "Kanit", sans-serif;
+      }
+
+      /* ----------hero=========== */
+      #hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        background-color: rgb(255, 242, 231);
+      }
+
+      #hero-slid {
+        width: auto;
+      }
+
+      #hero-discription {
+        width: 470px;
+        margin-bottom: 200px;
+        padding: 20px;
+      }
+      #hero-discription-title {
+        padding-left: 10px;
+        font-family: "kanit";
+        font-size: large;
+        font-weight: 500;
+      }
+      #hero-discription-heading {
+        font-family: "Margarine", sans-serif;
+        font-size: x-large;
+        padding: 10px;
+      }
+      #hero-discription-paragraph {
+        font-size: small;
+        font-family: "kanit";
+        padding-left: 10px;
+      }
+
+      #hero-img {
+        width: 55%;
+        background-image: url(./image/header_bg.png);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        justify-content: end;
+      }
+
+      .btn {
+        display: flex;
+        gap: 20px;
+        margin-left: 60px;
+      }
+      button {
+        margin-top: 20px;
+        background-color: rgb(255, 131, 30);
+        border: none;
+        border-radius: 5px;
+        padding: 13px;
+        color: rgb(255, 255, 255);
+        transition: all 1s;
+      }
+      button:hover {
+        background-color: black;
+        color: aliceblue;
+        cursor: pointer;
+      }
+
+      /* ===========main======== */
+      main {
+        margin-top: 200px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+      }
+
+      #first-section {
+        padding: 100px;
+        background-color: rgb(255, 242, 231);
+      }
+      #first-section-inner {
+        border: 1.8px solid black;
+        background-color: rgb(255, 255, 255);
+        border-radius: 2px;
+        padding-bottom: 10px;
+      }
+      #first-section-inner-title {
+        font-size: x-large;
+        display: flex;
+        font-family: "kanit";
+        font-weight: bolder;
+        justify-content: center;
+      }
+      #first-section-inner-discription {
+        padding: 15px;
+        font-family: "kanit";
+        font-size: medium;
+        text-align: center;
+        opacity: 0.6;
+      }
+      #first-section-inner-info {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 19px;
+        margin-top: 19px;
+      }
+      #first-section-inner-info h5 {
+        font-size: medium;
+        font-family: "kanit";
+        font-weight: 400;
+        opacity: 0.5;
+        text-align: center;
+        padding-bottom: 2px;
+      }
+      #first-section-inner-info p {
+        font-size: large;
+        font-family: "kanit";
+        font-weight: 400;
+        text-align: center;
+      }
+
+
+
+
+      #second-section{
+        margin-top: 90px;
+        margin-bottom: 70px;
+      }#second-section h2{
+        text-align: center;
+        font-family: "kanit";
+        margin-bottom: 15px;
+      }#second-section p{
+        text-align: center;
+        font-family: "kanit";
+        opacity: 0.6;
+        font-size: small;
+        padding-left: 110px;
+        padding-right: 110px;
+      }
+
+
+
+
+
+
+      #third-section{
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+      }.third-section-card{
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 8px;
+      }.third-section-card img{
+        margin-bottom: 15px;
+        border-radius: 5px;
+      }.third-section-card h4{
+        font-size: larger;
+        font-family: "kanit";
+        font-style: italic;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }.third-section-card p{
+        font-size: small;
+        font-family: "kanit";
+        opacity: 0.7;
+        text-align: center;
+      }
+      .third-section-card:hover{
+        box-shadow: 0px 0px 8px blue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="navbar">
+        <div id="nav-logo">
+          <p>Mub<span>i</span>n</p>
+        </div>
+
+        <div id="nav-list">
+          <ul type="none">
+            <li>Portfolio</li>
+            <li>Blog</li>
+            <li
+              style="
+                color: aliceblue;
+                border-radius: 5px;
+                background-color: rgb(255, 114, 32);
+                padding: 10px;
+                margin-top: -9px;
+              "
+            >
+              About Me
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="hero">
+        <div id="hero-slid">
+          <img src="./image/developer.png" />
+        </div>
+
+        <div id="hero-discription">
+          <div id="hero-discription-title">
+            <p>Hello, I am</p>
+          </div>
+          <div id="hero-discription-heading">
+            <h1>Arafat Mubin</h1>
+          </div>
+          <div id="hero-discription-paragraph">
+            <p>
+              Shot what able cold new see hold.Friendly as an betrayed formerly
+              he. Morning because as to society behaved moments.
+            </p>
+          </div>
+          <div class="btn">
+            <button>Download CV</button>
+            <button
+              style="
+                color: black;
+                border: 2px solid orange;
+                background-color: rgb(255, 255, 255);
+              "
+            >
+              Contact
+            </button>
+          </div>
+        </div>
+
+        <div id="hero-img">
+          <div>
+            <img src="./image/hardy.png" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="first-section">
+        <div id="first-section-inner">
+          <div id="first-section-inner-title">About Me</div>
+          <div id="first-section-inner-discription">
+            <p>
+              I, m a designer & developer with a passion for web design. I enjoy
+              developing simple, clean and slick websites that provide real
+              value to the end user. Thousands of clients have procured
+              exceptional resulfs while working with me. Delivering work within
+              time and budget which meets clients requirements in our mata.
+            </p>
+          </div>
+          <div id="first-section-inner-info">
+            <div>
+              <h5>Name:</h5>
+              <p>Arafat Mubin</p>
+            </div>
+            <div>
+              <h5>Email:</h5>
+              <p>mubinulislam14@gmail.com</p>
+            </div>
+            <div>
+              <h5>Date of Barth</h5>
+              <p>08 August2005</p>
+            </div>
+            <div>
+              <h5>From</h5>
+              <p>Bangladesh</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="second-section">
+        <h2>What I Do</h2>
+        <p>
+          I have more than 10 years experience building software for clients all
+          over the world. Below is a quick overview of my main technical skill
+          sets and technologies i use. Want to find out more about my
+          experience? Check out my online resume and project portfolio.
+        </p>
+      </div>
+
+      <div id="third-section">
+        <div class="third-section-card" id="third-section-first-card">
+          <img src="./image/js.png"/>
+          <h4>Vanilla JavaScript</h4>
+          <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+        </div>
+        <div class="third-section-card"  id="third-section-second-card">
+          <img src="./image/react.png"/>
+          <h4>React</h4>
+          <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+        </div>
+        <div class="third-section-card"  id="third-section-third-card">
+          <img src="./image/nodejs.png"/>
+          <h4>Node.js</h4>
+          <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+        </div>
+        <div class="third-section-card"  id="third-section-fourth-card">
+          <img src="./image/mongo.png"/>
+          <h4>MongoDB</h4>
+          <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
