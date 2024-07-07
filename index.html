@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mubin Portfolio</title>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Margarine&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap");
@@ -102,7 +103,7 @@
         border-radius: 5px;
         padding: 13px;
         color: rgb(255, 255, 255);
-        transition: all 1s;
+        transition: all 0.7s;
       }
       button:hover {
         background-color: black;
@@ -164,17 +165,16 @@
         text-align: center;
       }
 
-
-
-
-      #second-section{
+      #second-section {
         margin-top: 90px;
         margin-bottom: 70px;
-      }#second-section h2{
+      }
+      #second-section h2 {
         text-align: center;
         font-family: "kanit";
         margin-bottom: 15px;
-      }#second-section p{
+      }
+      #second-section p {
         text-align: center;
         font-family: "kanit";
         opacity: 0.6;
@@ -183,36 +183,128 @@
         padding-right: 110px;
       }
 
-
-
-
-
-
-      #third-section{
+      #third-section {
         display: flex;
         justify-content: space-between;
         gap: 15px;
-      }.third-section-card{
+      }
+      .third-section-card {
         padding: 20px;
         border-radius: 5px;
         box-shadow: 0px 0px 8px;
-      }.third-section-card img{
+      }
+      .third-section-card img {
         margin-bottom: 15px;
         border-radius: 5px;
-      }.third-section-card h4{
+      }
+      .third-section-card h4 {
         font-size: larger;
         font-family: "kanit";
         font-style: italic;
         font-weight: 500;
         margin-bottom: 10px;
-      }.third-section-card p{
+      }
+      .third-section-card p {
         font-size: small;
         font-family: "kanit";
         opacity: 0.7;
         text-align: center;
       }
-      .third-section-card:hover{
+      .third-section-card:hover {
         box-shadow: 0px 0px 8px blue;
+      }
+
+      #fourth-section {
+        text-align: center;
+        font-family: "kanit";
+        font-size: larger;
+        margin-top: 210px;
+        margin-bottom: 150px;
+      }
+
+      #fifth-section {
+        display: flex;
+        justify-content: space-between;
+        font-family: "Arimo", sans-serif;
+      }
+      .fifth-section-slide-header {
+        padding: 25px;
+        font-size: x-large;
+        font-style: italic;
+        font-weight: 700;
+      }
+      .fifth-section-slide-card {
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 5px;
+        transition: all 0.6s;
+      }
+      .fifth-section-slide-card:hover {
+        box-shadow: 0px 0px 9px rgb(255, 0, 0);
+        cursor: copy;
+      }
+      .fifth-section-slide-card h3 {
+        font-size: larger;
+        font-weight: 800;
+      }
+      .fifth-section-slide-card h5 {
+        font-size: medium;
+        opacity: 0.5;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .fifth-section-slide-card p {
+        font-size: small;
+        opacity: 0.6;
+        padding: 5px 50px 0px 0px;
+      }
+      hr {
+        margin: 10px 20px 10px 20px;
+      }
+
+      footer {
+        height: 700px;
+        background-color: rgb(255, 242, 231);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "arimo";
+      }
+      #footer-first-slide {
+        width: 28%;
+        margin: 0px auto;
+      }#footer-first-slide h2{
+        margin: 10px 0px;
+        font-weight: 700;
+        font-size: xx-large;
+      }#footer-first-slide p{
+        font-size: small;
+        margin: 10px 0px;
+      }#footer-img{
+        display: flex;
+        gap: 10px;
+        cursor: pointer;
+      }
+
+      #footer-second-slide{
+        width: 44%;
+        border-left: 1px solid black;
+      }#footer-second-slide>form>section>h1{
+        padding-left: 40px;
+        font-family: "arimo";
+        font-size: xx-large;
+      }
+
+      label{
+        display: block;
+        padding: 10px 50px;
+      }
+      input{
+        border: none;
+        width: 70%;
+        padding: 20px 30px;
+        font-size:small;
+        font-family: "arimo";
       }
     </style>
   </head>
@@ -220,7 +312,7 @@
     <header>
       <div id="navbar">
         <div id="nav-logo">
-          <p>Mub<span>i</span>n</p>
+          <p>MUB<span>I</span>N</p>
         </div>
 
         <div id="nav-list">
@@ -328,26 +420,160 @@
 
       <div id="third-section">
         <div class="third-section-card" id="third-section-first-card">
-          <img src="./image/js.png"/>
+          <img src="./image/js.png" />
           <h4>Vanilla JavaScript</h4>
-          <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+          <p>
+            List skill/technologies here. You can change the icon above to any
+            of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+            ligula eget dolor.
+          </p>
         </div>
-        <div class="third-section-card"  id="third-section-second-card">
-          <img src="./image/react.png"/>
+        <div class="third-section-card" id="third-section-second-card">
+          <img src="./image/react.png" />
           <h4>React</h4>
-          <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+          <p>
+            List skill/technologies here. You can change the icon above to any
+            of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+            ligula eget dolor.
+          </p>
         </div>
-        <div class="third-section-card"  id="third-section-third-card">
-          <img src="./image/nodejs.png"/>
+        <div class="third-section-card" id="third-section-third-card">
+          <img src="./image/nodejs.png" />
           <h4>Node.js</h4>
-          <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+          <p>
+            List skill/technologies here. You can change the icon above to any
+            of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+            ligula eget dolor.
+          </p>
         </div>
-        <div class="third-section-card"  id="third-section-fourth-card">
-          <img src="./image/mongo.png"/>
+        <div class="third-section-card" id="third-section-fourth-card">
+          <img src="./image/mongo.png" />
           <h4>MongoDB</h4>
-          <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+          <p>
+            List skill/technologies here. You can change the icon above to any
+            of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+            ligula eget dolor.
+          </p>
         </div>
       </div>
+
+      <div id="fourth-section">
+        <h2>A summary of My Resume</h2>
+      </div>
+
+      <div id="fifth-section">
+        <div class="fifth-section-slide">
+          <div class="fifth-section-slide-header">
+            <h3>My Education</h3>
+          </div>
+          <div class="fifth-section-slide-card">
+            <h3>Master in Computer Engineering</h3>
+            <h5>Harvard University / 2015 - 2017</h5>
+            <p>
+              List skill/technologies here. You can change the icon above to any
+              of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+              ligula eget dolor.
+            </p>
+          </div>
+          <hr />
+          <div class="fifth-section-slide-card">
+            <h3>Master in Computer Engineering</h3>
+            <h5>Harvard University / 2015 - 2017</h5>
+            <p>
+              List skill/technologies here. You can change the icon above to any
+              of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+              ligula eget dolor.
+            </p>
+          </div>
+          <hr />
+          <div class="fifth-section-slide-card">
+            <h3>Master in Computer Engineering</h3>
+            <h5>Harvard University / 2015 - 2017</h5>
+            <p>
+              List skill/technologies here. You can change the icon above to any
+              of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+              ligula eget dolor.
+            </p>
+          </div>
+        </div>
+        <div class="fifth-section-slide">
+          <div class="fifth-section-slide-header">
+            <h3>My Experience</h3>
+          </div>
+          <div class="fifth-section-slide-card">
+            <h3>Sr. Font End Developer</h3>
+            <h5>Apple Inc / 2020 - Current</h5>
+            <p>
+              List skill/technologies here. You can change the icon above to any
+              of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+              ligula eget dolor.
+            </p>
+          </div>
+          <hr />
+          <div class="fifth-section-slide-card">
+            <h3>Jr. Font End Developer</h3>
+            <h5>Dribbble Inc / 2018 - 2022</h5>
+            <p>
+              List skill/technologies here. You can change the icon above to any
+              of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+              ligula eget dolor.
+            </p>
+          </div>
+          <hr />
+          <div class="fifth-section-slide-card">
+            <h3>HTML Developer</h3>
+            <h5>Adobe Inc / 2017 - 2018</h5>
+            <p>
+              List skill/technologies here. You can change the icon above to any
+              of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+              ligula eget dolor.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn">
+        <button
+          style="margin-left: auto; margin-right: auto; margin-top: 100px"
+        >
+          Downlod CV
+        </button>
+      </div>
     </main>
+
+    <footer>
+      <div id="footer-first-slide">
+        <h2>Lets Connect</h2>
+        <p>
+          Please fill out the form on this section to contact with me or call
+          between 9:00 A.M and 8.00 P.M ET, Monday through Friday.
+        </p>
+        <div id="footer-img">
+          <img src="./image/facebook.png" alt="facebook" />
+          <img src="./image/insta.png" alt="insta" />
+          <img src="./image/twitter.png" alt="twitter" />
+        </div>
+      </div>
+
+      <div id="footer-second-slide">
+        <form >
+          <section>
+            <h1>Let's Massage Me</h1>
+          </section>
+          <label for="name">
+            <input type="text" placeholder="Enter Name">
+          </label>
+          <label for="Emaiil">
+            <input type="email" placeholder="Enter Email">
+          </label>
+          <label for="text">
+            <input type="text" placeholder="Massage">
+          </label>
+          <div class="btn">
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
+    </footer>
   </body>
 </html>
